@@ -6,24 +6,11 @@
         <title></title>
     </head>
     <body>
-        <input id="tiempo" placeholder="tiempo" type="text" size="10">
-        Esta es una prueba  <a onclick="checkVibrate(1000,document.getElementById('tiempo').value*1000+1000);" style="cursor: pointer">basica</a>
-        <br>
-        <br>18b
-        <button onclick="clearTimeout(timing);">stop</button>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            
-            app.initialize();
-            var timing;
-            function checkVibrate(timeV,timeT) {
-                //alert('vivrate1');
-                
-                timing=setTimeout(function () {navigator.notification.vibrate(timeV); checkVibrate(timeV,timeT); }, timeT);
-            }
-
-        </script>
+        <header>Titulo</header>
+        <nav>Nav</nav>
+        <article>Articulo</article>
+        <aside>Aside</aside>
+        <footer>Pie</footer>
     </body>
 
 </html>

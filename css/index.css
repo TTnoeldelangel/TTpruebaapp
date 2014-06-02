@@ -36,7 +36,7 @@ body {
         color-stop(0.51, #E4E4E4)
     );*/
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Miryad Pro','Seogoe UI','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:24px;
     height:100%;
     margin:0px;
@@ -68,6 +68,15 @@ body {
         margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
+
+}
+@media screen and (min-width:780px) {
+        .boton{
+        font-size:.1em;
+    }
+body{
+    font-size:36px;
+}
 }
 
 h1 {
