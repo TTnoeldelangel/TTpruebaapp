@@ -1,4 +1,13 @@
 /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2/06/2014, 02:03:26 PM
+    Author     : TYTSM
+*/
+/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -24,7 +33,7 @@ body {
    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E7E2DD;
+    background-color:#F3F3F3;
    /* background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -118,8 +127,6 @@ h1 {
     //position:absolute;
     margin-left:auto;
     margin-top: 5%;
-   // max-width:600px;
-    //background-color: white;
 }
 img{display:inline-block;
 }
@@ -134,7 +141,7 @@ img{display:inline-block;
 .title{
 
     display:block;
-    background-color: #01DF3A;//#333333;
+    background-color: #333333;
     //font-family: 'Seogoe ui light';
     color:white;
     font-weight: bolder;
@@ -153,7 +160,7 @@ img{display:inline-block;
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 1px;
-    //border: 1px solid #333333;
+    border: 1px solid #333333;
     margin-top: 1px;
 }
 .description-principal{
@@ -164,7 +171,6 @@ img{display:inline-block;
     position:relative;
     display:inline-block;
     width:70%;
-    padding-bottom: 3px;
 }
 .opciones{
     display:inline-block;
@@ -195,14 +201,11 @@ img{display:inline-block;
     color: white;
 }
 .blanco{
-    background: #2E64FE;
-    color: white; 
-    //border: 1px solid #333333
+    background: white;
+    color: black; 
+    border: 1px solid #333333
 }
 .detalles{
     display:none;
     //visibility: hidden;
-}
-b{
-    color:#2E64FE;
 }

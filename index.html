@@ -36,7 +36,7 @@
                     <b class="titulo-sol" onclick="MODetalles(this)">Autorizacion de Gasto</b>
                     <p class="description-principal" onclick="MODetalles(this)">Se solicita autorizacion para adquirir 200 filtros LM-3698</p>
                     <div class="detalles">
-                        <div class="detalles-datos"onclick="MODetalles(this)">
+                        <div class="detalles-datos rounded-corners" onclick="MODetalles(this)">
                             <div class="detalle"><b>Precio:</b> 2,000 USD</div>
                             <div class="detalle">
                                 <b>Causa:</b><br>
@@ -44,10 +44,10 @@
                             </div>
                         </div>
                     
-                    <div class="opciones">
-                        <span class="boton rojo rounded-corners">Autorizar</span>
-                        <span class="boton blanco rounded-corners">Ignorar</span>
-                    </div>
+                        <div class="opciones">
+                            <span class="boton rojo rounded-corners">Autorizar</span>
+                            <span class="boton blanco rounded-corners">Ignorar</span>
+                        </div>
                     </div>
                 </div>
                 <div class="solicitud rounded-corners" onclick="MODetalles(this)">
@@ -63,7 +63,7 @@
                         </div>
                     
                     <div class="opciones">
-                        <span class="boton rojo rounded-corners">Autorizar</span>
+                        <span class="boton rojo rounded-corners" onclick="setTimeout(function(){navigator.notification.alert('mensaje',checkVibrate,'titulo','vibrar')},3000);">Autorizar</span>
                        
                         <span class="boton blanco rounded-corners">Ignorar</span>
                     </div>
@@ -75,8 +75,8 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            function checkVibrate(timeV) {
-                navigator.notification.vibrate(timeV);
+            function checkVibrate() {
+                navigator.notification.vibrate(1000);
             }
             function MODetalles(element){
                 var detalles=element.getElementsByClassName('detalles')[0];
