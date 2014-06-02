@@ -61,13 +61,13 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+    
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
-
+<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <!-- Define app icon for each platform. This is a relative path to config.xml.
         For e.g. if you place an icon.png inside res folder, you should modify the
         src in the following setting to "res/icon.png" -->

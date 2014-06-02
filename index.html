@@ -79,6 +79,9 @@
             function checkVibrate() {
                 navigator.notification.vibrate(1000);
             }
+            document.addEventListener('deviceready', function () {
+                    // window.plugin.notification.local is now available
+                }, false);
             function MODetalles(element){
                 var detalles=element.getElementsByClassName('detalles')[0];
                 if(detalles.style.display!=='initial')
