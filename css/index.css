@@ -126,9 +126,9 @@ img{display:inline-block;
 .container{
     display:block;
     position:relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 400px;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 700px;
     //background-color: black;color:whitesmoke;
 }
 .title{
@@ -205,4 +205,8 @@ img{display:inline-block;
 }
 b{
     color:#2E64FE;
+}
+.logo{
+    background-color: white;
+    padding: 3px
 }

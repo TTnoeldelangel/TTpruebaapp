@@ -27,16 +27,16 @@
     </head>
     <body>
         <div align="center" class="principal">
-            <img src="img/logo.png">
+            <img class="logo rounded-corners" src="img/logo.png">
             <div class="container">
                 <div class="title rounded-corners">
                     ULTIMAS SOLICITUDES
                 </div>
                 <div class="solicitud rounded-corners" onclick="MODetalles(this)">
-                    <b class="titulo-sol" onclick="MODetalles(this)">Autorizacion de Gasto</b>
-                    <p class="description-principal" onclick="MODetalles(this)">Se solicita autorizacion para adquirir 200 filtros LM-3698</p>
+                    <b class="titulo-sol" onclick="">Autorizacion de Gasto</b>
+                    <p class="description-principal" onclick="">Se solicita autorizacion para adquirir 200 filtros LM-3698</p>
                     <div class="detalles">
-                        <div class="detalles-datos rounded-corners" onclick="MODetalles(this)">
+                        <div class="detalles-datos rounded-corners" onclick="">
                             <div class="detalle"><b>Precio:</b> 2,000 USD</div>
                             <div class="detalle">
                                 <b>Causa:</b><br>
@@ -51,10 +51,10 @@
                     </div>
                 </div>
                 <div class="solicitud rounded-corners" onclick="MODetalles(this)">
-                    <b class="titulo-sol" onclick="MODetalles(this)">Autorizacion de Gasto</b>
-                    <p class="description-principal" onclick="MODetalles(this)">Se solicita flete de pieza 328a a mazatlan.</p>
+                    <b class="titulo-sol" onclick="">Autorizacion de Gasto</b>
+                    <p class="description-principal" onclick="">Se solicita flete de pieza 328a a mazatlan.</p>
                     <div class="detalles">
-                        <div class="detalles-datos"onclick="MODetalles(this)">
+                        <div class="detalles-datos" onclick="">
                             <div class="detalle"><b>Precio:</b> 12,000 USD</div>
                             <div class="detalle">
                                 <b>Causa:</b><br>
@@ -63,7 +63,7 @@
                         </div>
                     
                     <div class="opciones">
-                        <span class="boton rojo rounded-corners" onclick="setTimeout(function(){navigator.notification.alert('mensaje',checkVibrate,'titulo','vibrar')},3000);">Autorizar</span>
+                        <span class="boton rojo rounded-corners" onclick="navigator.notification.alert('mensaje',checkVibrate,'titulo','vibrar');">Autorizar</span>
                        
                         <span class="boton blanco rounded-corners">Ignorar</span>
                     </div>
@@ -85,7 +85,7 @@
                 else
                     detalles.style.display='none';
                 
-            }
+            }//
         </script>
     </body>
 </html>
