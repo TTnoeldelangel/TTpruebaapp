@@ -23,14 +23,51 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Aplicacion</title>
+        <title>T&T Advisor</title>
     </head>
     <body>
-        <div class="app">
-            <h1>T&T Advisor</h1>
-            <div id="deviceready" class="blink">
-                <div class="event listening">Connecting to Device</div>
-                <div class="event received">Device is <a href='HTMLPage.html'>Ready </a>Ma Friend</div>
+        <div align="center" class="principal">
+            <img src="img/logo.png">
+            <div class="container">
+                <div class="title rounded-corners">
+                    ULTIMAS SOLICITUDES
+                </div>
+                <div class="solicitud rounded-corners" onclick="MODetalles(this)">
+                    <b class="titulo-sol" onclick="MODetalles(this)">Autorizacion de Gasto</b>
+                    <p class="description-principal" onclick="MODetalles(this)">Se solicita autorizacion para adquirir 200 filtros LM-3698</p>
+                    <div class="detalles">
+                        <div class="detalles-datos"onclick="MODetalles(this)">
+                            <div class="detalle"><b>Precio:</b> 2,000 USD</div>
+                            <div class="detalle">
+                                <b>Causa:</b><br>
+                                Cantidad minima en inventario
+                            </div>
+                        </div>
+                    
+                    <div class="opciones">
+                        <span class="boton rojo rounded-corners">Autorizar</span>
+                        <span class="boton blanco rounded-corners">Ignorar</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="solicitud rounded-corners" onclick="MODetalles(this)">
+                    <b class="titulo-sol" onclick="MODetalles(this)">Autorizacion de Gasto</b>
+                    <p class="description-principal" onclick="MODetalles(this)">Se solicita autorizacion para adquirir 200 filtros LM-3698</p>
+                    <div class="detalles">
+                        <div class="detalles-datos"onclick="MODetalles(this)">
+                            <div class="detalle"><b>Precio:</b> 2,000 USD</div>
+                            <div class="detalle">
+                                <b>Causa:</b><br>
+                                Cantidad minima en inventario
+                            </div>
+                        </div>
+                    
+                    <div class="opciones">
+                        <span class="boton rojo rounded-corners">Autorizar</span>
+                        <span class="boton blanco rounded-corners">Ignorar</span>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
@@ -39,6 +76,14 @@
             app.initialize();
             function checkVibrate(timeV) {
                 navigator.notification.vibrate(timeV);
+            }
+            function MODetalles(element){
+                var detalles=element.getElementsByClassName('detalles')[0];
+                if(detalles.style.display==='none')
+                    detalles.style.display='initial';
+                else
+                    detalles.style.display='none';
+                
             }
         </script>
     </body>
