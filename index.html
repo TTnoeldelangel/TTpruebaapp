@@ -64,6 +64,7 @@
                     
                     <div class="opciones">
                         <span class="boton rojo rounded-corners">Autorizar</span>
+                       
                         <span class="boton blanco rounded-corners">Ignorar</span>
                     </div>
                     </div>
@@ -79,7 +80,7 @@
             }
             function MODetalles(element){
                 var detalles=element.getElementsByClassName('detalles')[0];
-                if(detalles.style.display==='none')
+                if(detalles.style.display!=='initial')
                     detalles.style.display='initial';
                 else
                     detalles.style.display='none';
